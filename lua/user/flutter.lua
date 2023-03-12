@@ -16,6 +16,14 @@ require("flutter-tools").setup({
 		prefix    = "=> ",
 		enabled   = true,
 	},
+	outline = {
+    open_cmd = "30vnew", -- command to use to open the outline buffer
+    auto_open = false -- if true this will open the outline automatically when it is first populated
+  },
+	-- dev_log = {
+	--     enabled = true,
+	--     open_cmd = "30h", -- command to use to open the log buffer
+	--   },
 	lsp = {
 		color = {
 			enabled          = true,

@@ -32,13 +32,13 @@ lazy.setup({
 	{'nvim-tree/nvim-tree.lua'},
 	{'akinsho/bufferline.nvim'},
 	{'nvim-treesitter/nvim-treesitter'},
-
 	-- LSP Support
 	{'VonHeikemen/lsp-zero.nvim'},
 	{'neovim/nvim-lspconfig'},
 	{'williamboman/mason.nvim'},
 	{'williamboman/mason-lspconfig.nvim'},
 	{'WhoIsSethDaniel/toggle-lsp-diagnostics.nvim'},
+	{'onsails/lspkind.nvim'}, -- Doesn't really work forwhatever reason,
 	-- Autocompletion
 	{'hrsh7th/nvim-cmp'},
 	{'hrsh7th/cmp-buffer'},
@@ -52,20 +52,16 @@ lazy.setup({
 	-- Snippets
 	{'L3MON4D3/LuaSnip'},
 	{'rafamadriz/friendly-snippets'},
-	
 	{'akinsho/flutter-tools.nvim'},
 	{'nvim-lua/plenary.nvim'},
 	{'nvim-telescope/telescope.nvim', tag = '0.1.1',},
-
 	-- Startup Nvim
 	{'startup-nvim/startup.nvim'},
 	{'terrortylor/nvim-comment'},
-
 	-- UndoTree
 	{'mbbill/undotree'},
 	-- Keep Cursor Centered
 	{'arnamak/stay-centered.nvim'},
-	
 	-- Styling
 	{'folke/which-key.nvim'},
 	{'gelguy/wilder.nvim'},

@@ -27,3 +27,4 @@ lsp.nvim_workspace()
 lsp.setup()
 
 require('toggle_lsp_diagnostics').init()
+

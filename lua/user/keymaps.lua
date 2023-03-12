@@ -24,7 +24,10 @@ vim.keymap.set('n', 'u', '')
 vim.keymap.set('n', '<c-u>', '<cmd>:undo<CR>')
 vim.keymap.set('n', '<c-r>', '<cmd>:redo<CR>')
 
+
+-- Window Command key Remap
 vim.keymap.set('n', '<leader>w', '<c-w>', { remap = true })
+
 
 -- Vim Diagnostics - Jump To Defintions
 vim.api.nvim_create_autocmd('LspAttach', {
@@ -44,10 +47,10 @@ vim.api.nvim_create_autocmd('LspAttach', {
 })
 
 -- -- Quick Window Resizing
-vim.keymap.set('n', '<leader>=', '<cmd>:vertical resize +5<CR>')
-vim.keymap.set('n', '<leader>-', '<cmd>:vertical resize -5<CR>')
-vim.keymap.set('n', '<leader>+', '<cmd>:horizontal resize +5<CR>')
-vim.keymap.set('n', '<leader>_', '<cmd>:horizontal resize -5<CR>')
+vim.keymap.set('n', '<leader>=', '<cmd>:vertical resize +3<CR>')
+vim.keymap.set('n', '<leader>-', '<cmd>:vertical resize -3<CR>')
+vim.keymap.set('n', '<leader>+', '<cmd>:horizontal resize +3<CR>')
+vim.keymap.set('n', '<leader>_', '<cmd>:horizontal resize -3<CR>')
 
 
 -- Fluter
@@ -61,3 +64,7 @@ vim.keymap.set('n', '<leader>fl', '<cmd>:FlutterLogClear<CR>')
 
 -- NvimTree
 vim.keymap.set('n', '<leader>e', '<cmd>NvimTreeToggle<cr>')
+
+-- Nvim Tree -- Open file in Vertical Split Remap
+vim.keymap.set('n', '<leader>v', '<c-v>', {remap = true})
+vim.keymap.set('n', '<leader>x', '<c-x>', {remap = true})

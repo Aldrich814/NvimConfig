@@ -2,10 +2,10 @@ local wk = require('which-key')
 wk.register({
 	["["] = "First Buffer",
 	["]"] = "Last Buffer",
-	["="] = "Vertical Width +5",
-	["-"] = "Vertical Width -5",
-	["+"] = "Horizontal Width +5",
-	["_"] = "Horizontal Width -5",
+	["="] = "Vertical Width +3",
+	["-"] = "Vertical Width -3",
+	["+"] = "Horizontal Width +3",
+	["_"] = "Horizontal Width -3",
 	a = "Highlight Buffer",
 	b = "Close Buffer",
 	c = {
@@ -42,7 +42,14 @@ wk.register({
 		h = 'Telescope => Help Tags',
 		c = 'Telescope => Flutter Commands',
   },
-}, { prefix = "<leader>" })
+	v = {
+		name = "NvimTree => Open file in Vertical Split",
+	},
+	x = {
+		name = "NvimTree => Open file in Horizontal Split",
+	},
+	{prefix = "<leader>"}
+})
 
 wk.register({
 	u = "Undo last edit",
